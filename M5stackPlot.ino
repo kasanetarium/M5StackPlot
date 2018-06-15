@@ -1,6 +1,12 @@
 #include <M5Stack.h>
 // LCD 320 x 240
-int memory[320] = {0}; //0で初期化
+// 信号ピンをM5Stackの36ピンにつなぐ
+// GNDをGピンにつなぐ
+
+//画面の行画素分の配列を定義
+int memory[320]={0};
+
+//最新データを入れる変数を定義
 int data;
 
 #define signalPin 36  // 信号線をGPIO36につなぐ
